@@ -1,0 +1,270 @@
+:root {
+  --blue-dark: #070A4E;
+  --blue-medium: #252872;
+  --blue-light: #646693;
+  --red: #E32934;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body, button, input, textarea {
+  font: 400 16px 'Rubik', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 15px 16px;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header-navigation-container {
+  display: flex;
+  gap: 25px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-navigation li {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+.header-navigation li.active {
+  font-weight: 600;
+}
+
+.header-navigation li a {
+  padding: 10px;
+}
+
+.purchase-button {
+  font: 500 12px 'Inter', sans-serif;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: var(--white);
+  padding: 16px 32px;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.purchase-button:hover {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+
+main {
+  width: 100%;
+  max-width: 1120px;
+  margin: 72px auto 0;
+  padding: 0 16px;
+
+  display: flex;
+}
+
+.main-section {
+  max-width: 645px;
+  padding-left: 40px;
+}
+
+.main-title {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.main-description {
+  margin-top: 18px;
+  font-weight: 300;
+}
+
+.nutritional-container {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nutritional-title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nutritional-items-container {
+  display: flex;
+  gap: 15px;
+}
+
+.nutritional-items-container li {
+  width: 117px;
+}
+
+.nutritional-items-container li > div {
+  padding: 20px 0;
+  background-color: var(--blue-medium);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.nutritional-items-container li > div strong {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.nutritional-items-container li > footer {
+  padding: 10px 0;
+  background-color: var(--blue-light);
+
+  display: flex;
+  justify-content: center;
+}
+
+.nutritional-detail {
+  font-weight: 300;
+  font-size: 14px;
+  max-width: 375px; 
+}
+
+.nutritional-purchase-button {
+  margin-top: 63px;
+}
+
+
+.pepsi-images-container {
+  flex: 1;
+  position: relative;
+}
+
+.little-can {
+  position: absolute;
+  bottom: 0;
+  right: 202px;
+}
+
+.large-can {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.can-shadow {
+  position: absolute;
+  right: 0;
+  top: 86%;
+  z-index: -1;
+}
+
+
+.info-right-bottom-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 110px;
+
+  background-color: var(--blue-light);
+  padding-bottom: 18px;
+}
+
+.info-right-bottom-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 19px 12px;
+
+  background-color: var(--blue-medium);
+}
+
+.info-right-bottom-container > div strong {
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.info-right-bottom-container > div small {
+  margin: 2px 0 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.info-right-bottom-container > div span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+.social-medias-container {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social-medias-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+
+.background-blur {
+  background: #FFFFFF;
+  width: 370px;
+  height: 370px;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  filter: blur(250px);
+
+  z-index: -1;
+}
